@@ -18,10 +18,15 @@ export default function TimeDivider() {
     const interval = diffMs / 4; // divide into 4 equal parts
     const dividedPoints = [];
 
-    // include "from" and "to" in the output
+    // include "from" and "to" in the output (in 12-hour format)
     for (let i = 0; i <= 4; i++) {
       const point = new Date(fromDate.getTime() + interval * i);
-      dividedPoints.push(point.toLocaleString());
+      const formattedTime = point.toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true, // <-- this ensures AM/PM format
+      });
+      dividedPoints.push(formattedTime);
     }
 
     setParts(dividedPoints);
