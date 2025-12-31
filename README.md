@@ -107,7 +107,7 @@ Part 4: 12:00 PM
 
 ## Author
 
-**Bharathvaj V**
+**Bharathvaj V**  
 Computer Science Student  
 
 LinkedIn: [bharathvaj-v](https://www.linkedin.com/in/bharathvaj-v)
